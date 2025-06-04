@@ -10,6 +10,7 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    includeBuild("convention-plugins")
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -21,4 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sharing build logic between subprojects"
 include(":app")
- 
+include(":lib_a")
